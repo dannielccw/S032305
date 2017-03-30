@@ -16,14 +16,28 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add("選項一");
-        menu.add("選項二");
+        getMenuInflater().inflate(R.menu.my_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+        switch (item.getItemId())
+        {
+            case R.id.menuadd:
+
+
+                break;
+            case R.id.menusettings:
+
+
+                break;
+            case R.id.menuabout:
+
+
+                break;
+        }
         return super.onOptionsItemSelected(item);
     }
 }
